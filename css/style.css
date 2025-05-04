@@ -1,0 +1,414 @@
+/******************************
+*** GLOBAL ********************
+******************************/
+
+html {
+    font-size: 16px;
+    color: #2c2925;
+    background: #fffbed;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+h1 {
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-stretch: 125%;
+    font-size: 4rem;
+    line-height: 100%;
+    letter-spacing: -0.1rem;
+}
+h2 {
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-stretch: 125%;
+    font-size: 3rem;
+    line-height: 110%;
+    letter-spacing: -0.0375rem;
+}
+h3 {
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-stretch: 125%;
+    font-size: 1.5rem;
+    line-height: 110%;
+    letter-spacing: -0.01875rem;
+}
+p {
+    font-family: "Archivo", sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 150%;
+    padding-top: 1.25rem;
+}
+p.standfirst {
+    font-family: "Archivo", sans-serif;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 150%;
+}
+p.caption {
+    font-family: "Archivo", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    padding-bottom: 0.75rem;
+}
+strong {
+    font-weight: 700;
+}
+p.no-pad {
+    padding-top: 0;
+}
+section{
+    margin: 0 auto;
+    padding: 6.75rem 1.5rem 0 1.5rem;
+}
+
+/***** Buttons and Links *****/
+
+.hero-links a {
+    font-family: "Archivo", sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 150%;
+    color: #2c2925;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 0.25rem;
+    transition: all 0.3s ease-in-out;
+    vertical-align: text-bottom;
+}
+.hero-links a:hover {
+    color: #121212;
+    text-decoration-style: solid;
+    text-underline-offset: 0.3125rem;
+    text-decoration-thickness: 0.125rem;
+}
+button {
+    padding: 0.5rem 1rem 0.5rem 1.5rem;
+    background: #2c2925;
+    border-radius: 0.75rem;
+    font-family: "Archivo", sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 65%;
+    margin-left: 0.5rem;
+    border: 2px #2c2925 solid;
+    transition: all 0.3s ease-in-out;
+}
+button:hover {
+    background: #fffbed;
+    color: #2c2925;
+}
+button label {
+    float: left;
+    display: inline-block;
+    padding: 0.125rem 0;
+    line-height: 1;
+}
+.button-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    
+}
+button.apple .button-icon {
+    margin-left: 1rem;
+    background: url('../svg/apple.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+button.spotify .button-icon {
+    margin-left: 1rem;
+    background: url('../svg/spotify.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+button.spotify {
+    margin-right: 0.5rem;
+}
+.prev .button-icon {
+    background: url('../svg/prev.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.next .button-icon {
+    background: url('../svg/next.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.prev,
+.next {
+    padding: 0.625rem;
+    transition: all 0.3s ease-in-out;
+}
+.prev:hover, 
+.next:hover {
+    padding: 0.5rem;
+    border: 2px #2c2925 solid;
+}
+
+/***** Grid *****/
+
+.grid-container-10 {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-areas: '. . col col col col col col col col col col . . . .';
+}
+.grid-container-8 {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-areas: '. . col col col col col col col col . . . . . .';
+}
+.grid {
+    grid-area: col;
+}
+
+/***** Header *****/
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    top: 0;
+    background: #fffbed;
+    display: inline-block;
+    line-height: 0;
+}
+.header-container {
+    padding: 0.75rem 0.25rem 0.75rem 0.75rem;
+    border-bottom: 1px solid #2c2925;
+    display: inline-block;
+    width: 100%;
+}
+.header-logo {
+    float: left;
+    padding: 1.125rem 0;
+}
+.header-links {v
+    position: relative;
+    float: right;
+}
+.header-apple {
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 0.75rem;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+.header-apple:hover {
+    background: #f7cefa;
+}
+.apple-logo {
+    width: 2.75rem;
+    height: 2.75rem;
+}
+.header-spotify {
+    padding: 0.5rem;
+    margin-left: 0.25rem;
+    border-radius: 0.75rem;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+.header-spotify:hover {
+    background: #b3ffda;
+}
+.spotify-logo {
+    width: 2.75rem;
+    height: 2.75rem;
+}
+
+/***** Footer *****/
+
+footer {
+    background: #2c2925;
+    width: 100%;
+    padding: 4.5rem 1.5rem 0 1.5rem;
+    margin-top: 6.75rem;
+}
+.grid-footer {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-areas: '. . flogo flogo flogo . . . fcred fcred fcred fcred fcred fcred . .';
+}
+.footer-credit {
+    grid-area: fcred;
+    color: #fffbed;
+}
+.footer-logo {
+    grid-area: flogo;
+    display: flex;
+    align-items: flex-end
+}
+.qmul-logo {
+    margin-top: 1.5rem;
+}
+.copyright {
+    padding: 0.75rem 0 1.25rem 0;
+    margin-top: 4.5rem;
+    background: #121212;
+    color: #fffbed;
+    border-radius: 0.75rem 0.75rem 0 0;
+}
+
+/******************************
+*** HOME PAGE *****************
+******************************/
+
+.home-hero {
+    margin: 0 auto;
+    padding: 8.5rem 1.5rem 0 1.5rem;
+}
+.box {
+    padding: 6.75rem 0;
+    border-radius: 0.75rem;
+}
+
+/***** Cards *****/
+
+.card {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #2c2925;
+}
+.card-text {
+    padding: 0 1rem 1.25rem 1rem;
+}
+.cards-container {
+    padding-top: 4.5rem;
+    display: grid;
+    grid-auto-columns: 4fr;
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+    grid-template-areas: 
+    "ep-1 ep-2 ep-3 ep-4"
+    "ep-5 ep-6 ep-7 ep-8";
+}
+h3.placeholder {
+    text-align: center;
+    color: #e70526;
+}
+.card-placeholder {
+    background: #ffd1be;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ep-1 {
+    background: #fbe475;
+}
+.ep-2 {
+    background: #bbfffc;
+}
+.ep-3 {
+    background: #ffcbd7;
+}
+.ep-4 {
+    background: #b3e6ff;
+}
+.ep-5 {
+    background: #f7cefa;
+}
+.ep-6 {
+    background: #ffd1be;
+}
+.ep-7 {
+    background: #c9bfff;
+}
+.ep-8 {
+    background: #b3ffda;
+}
+
+/***** Credits *****/
+
+.grid-credits {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-areas: '. . col1 col1 col1 col1 col2 col2 col2 col2 col3 col3 col3 col3 . .';
+    margin-top: 1.5rem;
+}
+.cred-col1 {
+    grid-area: col1;
+}
+.cred-col2 {
+    grid-area: col2;
+
+}
+.cred-col3 {
+    grid-area: col3;
+}
+.line2 {
+    padding-top: 1.25rem;
+}
+
+/******************************
+*** EPISODE PAGES *************
+******************************/
+
+.ep-hero {
+    padding: 0 1.5rem;
+}
+.grid-hero {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-areas: '. text text text text text text text text . . img img img .';
+    padding: 8.5rem 0 6.75rem 0;
+    border-radius: 0 0 0.75rem 0.75rem;
+}
+.hero-text {
+    grid-area: text;
+}
+.hero-img {
+    grid-area: img;
+}
+.hero-links {
+    display: inline-block;
+    margin-top: 2.25rem;
+}
+.hero-links p {
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+.ep1-bg {
+    background: #fbe475;
+}
+.ep2-bg {
+    background: #bbfffc;
+}
+.ep3-bg {
+    background: #ffcbd7;
+}
+.ep4-bg {
+    background: #b3e6ff;
+}
+.ep5-bg {
+    background: #f7cefa;
+}
+.ep6-bg {
+    background: #ffd1be;
+}
+.ep7-bg {
+    background: #b3ffda;
+}
+.ep8-bg {
+    background: #c9bfff;
+}
+
+
+/******************************
+*** MEDIA QUERIES *************
+******************************/
