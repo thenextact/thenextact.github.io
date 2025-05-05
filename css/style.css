@@ -117,39 +117,19 @@ button label {
 }
 button.apple .button-icon {
     margin-left: 1rem;
-    background: url('../svg/apple.svg');
+    background: url('../svg/icon-apple.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
 }
 button.spotify .button-icon {
     margin-left: 1rem;
-    background: url('../svg/spotify.svg');
+    background: url('../svg/icon-spotify.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 button.spotify {
     margin-right: 0.5rem;
-}
-.prev .button-icon {
-    background: url('../svg/prev.svg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-.next .button-icon {
-    background: url('../svg/next.svg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-.prev,
-.next {
-    padding: 0.625rem;
-    transition: all 0.3s ease-in-out;
-}
-.prev:hover, 
-.next:hover {
-    padding: 0.5rem;
-    border: 2px #2c2925 solid;
 }
 
 /***** Grid *****/
@@ -275,15 +255,6 @@ footer {
 
 /***** Cards *****/
 
-.card {
-    border-radius: 0.75rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: #2c2925;
-}
-.card-text {
-    padding: 0 1rem 1.25rem 1rem;
-}
 .cards-container {
     padding-top: 4.5rem;
     display: grid;
@@ -308,27 +279,143 @@ h3.placeholder {
 }
 .ep-1 {
     background: #fbe475;
+    transition: all 0.3s ease-in-out;
 }
 .ep-2 {
     background: #bbfffc;
+    transition: all 0.3s ease-in-out;
 }
 .ep-3 {
     background: #ffcbd7;
+    transition: all 0.3s ease-in-out;
 }
 .ep-4 {
     background: #b3e6ff;
+    transition: all 0.3s ease-in-out;
 }
 .ep-5 {
     background: #f7cefa;
+    transition: all 0.3s ease-in-out;
 }
 .ep-6 {
     background: #ffd1be;
+    transition: all 0.3s ease-in-out;
 }
 .ep-7 {
     background: #c9bfff;
+    transition: all 0.3s ease-in-out;
 }
 .ep-8 {
     background: #b3ffda;
+    transition: all 0.3s ease-in-out;
+}
+.card {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #2c2925;
+    transition: all 0.3s ease-in-out;
+}
+.card:hover h3 {
+    text-decoration: underline;
+}
+.card img {
+    border-top: 0.25rem solid transparent;
+    border-left: 0.25rem solid transparent;
+    border-right: 0.25rem solid transparent;
+    border-radius: 0.75rem 0.75rem 0 0;
+    transition: all 0.3s ease-in-out;
+}
+.card:hover img {
+    border-radius: 0.75rem 0.75rem 0 0;
+}
+.ep-1:hover img {
+    border-top: 0.25rem solid #ff7c01;
+    border-left: 0.25rem solid #ff7c01;
+    border-right: 0.25rem solid #ff7c01;
+}
+.ep-2:hover img {
+    border-top: 0.25rem solid #02aa9a;
+    border-left: 0.25rem solid #02aa9a;
+    border-right: 0.25rem solid #02aa9a;
+}
+.ep-3:hover img {
+    border-top: 0.25rem solid #e70526;
+    border-left: 0.25rem solid #e70526;
+    border-right: 0.25rem solid #e70526;
+}
+.ep-4:hover img {
+    border-top: 0.25rem solid #1e9bff;
+    border-left: 0.25rem solid #1e9bff;
+    border-right: 0.25rem solid #1e9bff;
+}
+.ep-5:hover img {
+    border-top: 0.25rem solid #e05bf9;
+    border-left: 0.25rem solid #e05bf9;
+    border-right: 0.25rem solid #e05bf9;
+}
+.ep-6:hover img {
+    border-top: 0.25rem solid #f72605;
+    border-left: 0.25rem solid #f72605;
+    border-right: 0.25rem solid #f72605;
+}
+.ep-7:hover img {
+    border-top: 0.25rem solid #2f2392;
+    border-left: 0.25rem solid #2f2392;
+    border-right: 0.25rem solid #2f2392;
+}
+.ep-8:hover img {
+    border-top: 0.25rem solid #018f2e;
+    border-left: 0.25rem solid #018f2e;
+    border-right: 0.25rem solid #018f2e;
+}
+.card-text {
+    padding: 0 0.75rem 1rem 0.75rem;
+    border-bottom: 0.25rem solid transparent;
+    border-left: 0.25rem solid transparent;
+    border-right: 0.25rem solid transparent;
+    transition: all 0.3s ease-in-out;
+    border-radius: 0 0 0.75rem 0.75rem;
+}
+.ep-1:hover .card-text {
+    border-bottom: 0.25rem solid #ff7c01;
+    border-left: 0.25rem solid #ff7c01;
+    border-right: 0.25rem solid #ff7c01;
+}
+.ep-2:hover .card-text {
+    border-bottom: 0.25rem solid #02aa9a;
+    border-left: 0.25rem solid #02aa9a;
+    border-right: 0.25rem solid #02aa9a;
+}
+.ep-3:hover .card-text {
+    border-bottom: 0.25rem solid #e70526;
+    border-left: 0.25rem solid #e70526;
+    border-right: 0.25rem solid #e70526;
+}
+.ep-4:hover .card-text {
+    border-bottom: 0.25rem solid #1e9bff;
+    border-left: 0.25rem solid #1e9bff;
+    border-right: 0.25rem solid #1e9bff;
+}
+.ep-5:hover .card-text {
+    border-bottom: 0.25rem solid #e05bf9;
+    border-left: 0.25rem solid #e05bf9;
+    border-right: 0.25rem solid #e05bf9;
+}
+.ep-6:hover .card-text {
+    border-bottom: 0.25rem solid #f72605;
+    border-left: 0.25rem solid #f72605;
+    border-right: 0.25rem solid #f72605;
+}
+.ep-7:hover .card-text {
+    border-bottom: 0.25rem solid #2f2392;
+    border-left: 0.25rem solid #2f2392;
+    border-right: 0.25rem solid #2f2392;
+}
+.ep-8:hover .card-text {
+    border-bottom: 0.25rem solid #018f2e;
+    border-left: 0.25rem solid #018f2e;
+    border-right: 0.25rem solid #018f2e;
 }
 
 /***** Credits *****/
@@ -406,6 +493,64 @@ h3.placeholder {
 }
 .ep8-bg {
     background: #c9bfff;
+}
+
+/***** More eps *****/
+
+.grid-more {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-areas: '. . more more more more more more more more . . nav nav . .';
+}
+.grid-more h2 {
+    grid-area: more;
+}
+.more-nav {
+    grid-area: nav;
+    display: inline-block;
+}
+.button-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.prev .button-icon {
+    background: url('../svg/prev.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.next .button-icon {
+    background: url('../svg/next.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.prev,
+.next {
+    padding: 0.5rem;
+    border: 0.125rem solid transparent;
+    transition: all 0.3s ease-in-out;
+    border-radius: 1.5rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    display: inline-block;
+    float: right;
+    margin-left: 0.5rem;
+}
+.prev:hover, 
+.next:hover {
+    background: #fffbed;
+    border: 0.125rem solid #2c2925;
+}
+.prev span,
+.next span {
+    visibility: hidden;
+}
+.inactive {
+    opacity: 0.2;
+}
+.inactive:hover {
+    background: initial;
+    border: 0.125rem solid transparent;
 }
 
 
