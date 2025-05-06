@@ -56,6 +56,9 @@ p.caption {
     line-height: 150%;
     padding-bottom: 0.75rem;
 }
+span.italic {
+    font-style: italic;
+}
 strong {
     font-weight: 700;
 }
