@@ -7,7 +7,7 @@
 	<meta name="description" content="">
 	<meta property="og:title" content="Episode 3: Sonali Bhattacharyya | The Next Act">
 	<meta property="og:description" content=""> 
-	<meta property="og:url" content="https://thenextact.co.uk">
+	<meta property="og:url" content="https://thenextact.co.uk/episodes/sonali-bhattacharyya/">
 	<meta property="og:image" content="https://thenextact.co.uk/images/web-preview-sonali.jpg">
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630"> 
@@ -16,9 +16,9 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../../css/style.css">
-	<link rel="icon" href="../../images/favicon.ico" type="image/x-icon" sizes="16x16">
-	<link rel="icon" href="../../images/icon.svg" type="image/svg+xml" sizes="any">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png" type="image/png" sizes="180x180">
+	<link rel="icon" href="../../icons/favicon.ico" type="image/x-icon" sizes="16x16">
+	<link rel="icon" href="../../icons/icon.svg" type="image/svg+xml" sizes="any">
+	<link rel="apple-touch-icon" href="icons/apple-touch-icon.png" type="image/png" sizes="180x180">
 </head>
 <body>
 
@@ -27,7 +27,17 @@
 	<header>
 		<div class="header-container">
 			<a href="../../" class="header-logo">
-				<img src="../../svg/header-logo-large.svg" alt="The Next Act">
+				<picture>
+				  <source 
+				    media="(min-width: 600px)"
+				    srcset="../../icons/header-logo-large.svg">
+				  <source 
+				    media="(max-width: 599px)"
+				    srcset="../../icons/header-logo-small.svg">
+				  <img 
+				    src="../../icons/header-logo-small.png" 
+				    alt="The Next Act">
+				</picture>
 			</a>
 			<div class="header-links">
 				<a href="" class="header-apple">
@@ -63,22 +73,30 @@
 
 	<div class="ep-hero">
 		<div class="grid-hero ep3-bg">
+			<span class="mimg"><img src="../../images/web-profile-sonali.webp" alt="An image of writer Sonali Bhattacharyya in a circular frame"></span>
 			<div class="hero-text">
 				<p>Episode 3</p>
 				<h1>Sonali <br/>Bhattacharyya</h1>
 				<p>Lorem ipsum dolor sit amet consectetur. Aliquet vitae amet arcu egestas. Elementum morbi semper est sed volutpat vivamus aliquet enim molestie. Amet ornare sagittis gravida vulputate fermentum non cursus pretium libero. Vitae nunc leo turpis condimentum non a vitae diam.</p>
 				<div class="hero-links">
 					<p class="no-pad">Listen now:</p>
-					<button class="apple">
-						<label>Apple</label>
-						<div class=button-icon></div>
-					</button>
-					<button class="spotify"><label>Spotify</label><div class=button-icon></div></button>
+					<div class="buttons">
+						<button class="apple">
+							<label>Apple</label>
+							<div class=button-icon></div>
+						</button>
+						<button class="spotify">
+							<label>Spotify</label>
+							<div class=button-icon></div>
+						</button>
+					</div>
+				</div>
+				<div class="links">
 					<p class="no-pad">or</p>
 					<a href="#transcript" class="link">read transcript</a>
 				</div>
 			</div>
-			<img src="../../images/web-profile-sonali.webp" alt="An image of writer Sonali Bhattacharyya in a circular frame" class="hero-img">
+			<span class="dimg"><img src="../../images/web-profile-sonali.webp" alt="An image of writer Sonali Bhattacharyya in a circular frame" class="hero-img"></span>
 		</div>
 		
 	</div>
@@ -109,7 +127,7 @@
 
 	<!-- MORE EPS -->
 
-	<section>
+	<section class="more-eps">
 		<div class="box ep3-bg">
 			<div class="grid-more">
 				<h2>
@@ -119,7 +137,7 @@
 					<a href="../neil-dsouza/" class="next">
 						<div class="button-icon"></div>
 					</a>
-					<a href="" class="prev inactive">
+					<a href="../azma-dar/" class="prev">
 						<div class="button-icon"></div>
 					</a>
 					
@@ -133,9 +151,7 @@
 	<section id="transcript">
 		<div class="grid-container-8">
 			<div class="grid">
-				<h2>
-					Transcript
-				</h2>
+				<h2>Transcript</h2>
 				<p><strong>Name:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper a lacus vestibulum sed. Scelerisque eleifend donec pretium vulputate sapien. Eu lobortis elementum nibh tellus molestie. Quis varius quam quisque id diam. Aliquam sem et tortor consequat id porta nibh venenatis cras. Duis ut diam quam nulla. In metus vulputate eu scelerisque.</p>
 				<p><strong>Name:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper a lacus vestibulum sed. Scelerisque eleifend donec pretium vulputate sapien. Eu lobortis elementum nibh tellus molestie. Quis varius quam quisque id diam. Aliquam sem et tortor consequat id porta nibh venenatis cras. Duis ut diam quam nulla. In metus vulputate eu scelerisque.</p>
 				<p><strong>Name:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper a lacus vestibulum sed. Scelerisque eleifend donec pretium vulputate sapien. Eu lobortis elementum nibh tellus molestie. Quis varius quam quisque id diam. Aliquam sem et tortor consequat id porta nibh venenatis cras. Duis ut diam quam nulla. In metus vulputate eu scelerisque.</p>
@@ -149,7 +165,7 @@
 	<footer>
 		<div class="grid-footer">
 			<div class="footer-logo">
-				<img src="../../svg/footer-logo.svg" alt="The Next Act">
+				<img src="../../icons/footer-logo.svg" alt="The Next Act">
 			</div>
 			<div class="footer-credit">
 				<p>Supported and funded by the Queen Mary Centre for Public Engagement and the Department of Drama, Queen Mary University of London</p>
