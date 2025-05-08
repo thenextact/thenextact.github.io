@@ -70,6 +70,16 @@ section{
     padding: 6.75rem 1.5rem 0 1.5rem;
 }
 
+/***** 404 *****/
+
+section.not-found {
+    padding: 12rem 1.5rem 0 1.5rem;
+}
+.not-found h1 {
+    color: #e70526;
+    font-size: 6rem;
+}
+
 /***** Grid *****/
 
 .grid-container-10 {
@@ -598,7 +608,8 @@ button.spotify {
     }
     .links a,
     .share a,
-    .hero-text a {
+    .hero-text a,
+    a.ext-link {
         font-size: 1.125rem;
     }
 }
