@@ -288,8 +288,9 @@ a.ext-link {
     grid-auto-rows: 1fr;
     gap: 1rem;
     grid-template-areas: 
-    "ep-1 ep-2 ep-3 ep-4"
-    "ep-5 ep-6 ep-7 ep-8";
+    "ep-X";
+    /*"ep-1 ep-2 ep-3 ep-4"
+    "ep-5 ep-6 ep-7 ep-8";*/
 }
 h3.placeholder {
     text-align: center;
@@ -298,7 +299,7 @@ h3.placeholder {
 .card-placeholder {
     background: #ffd1be;
     border-radius: 0.75rem;
-    padding: 1.5rem;
+    padding: 4.5rem 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -622,10 +623,11 @@ button.spotify {
         grid-auto-rows: 1fr;
         gap: 1rem;
         grid-template-areas: 
-        "ep-1 ep-2"
+        "ep-X";
+        /*"ep-1 ep-2"
         "ep-3 ep-4"
         "ep-5 ep-6"
-        "ep-7 ep-8";
+        "ep-7 ep-8";*/
     }
     .grid-credits {
         grid-template-areas: '. col1 col1 col1 col1 col1 col2 col2 col2 col2 col2 col3 col3 col3 col3 col3';
@@ -770,14 +772,15 @@ button.spotify {
         grid-auto-rows: 1fr;
         gap: 1rem;
         grid-template-areas: 
-        "ep-1"
+        "ep-X";
+        /*"ep-1"
         "ep-2"
         "ep-3"
         "ep-4"
         "ep-5"
         "ep-6"
         "ep-7"
-        "ep-8";
+        "ep-8";*/
     }
     .grid-footer {
         display: block;
