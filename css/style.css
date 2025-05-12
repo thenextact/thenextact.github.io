@@ -497,6 +497,7 @@ button.spotify {
     margin-left: 0.5rem;
     border: 2px #2c2925 solid;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 button.apple:hover,
 button.spotify:hover {
@@ -508,6 +509,7 @@ button label {
     display: inline-block;
     padding: 0.125rem 0;
     line-height: 1;
+    cursor: pointer;
 }
 .button-icon {
     width: 1.5rem;
