@@ -327,11 +327,11 @@ h3.placeholder {
     transition: all 0.3s ease-in-out;
 }
 .ep-4 {
-    background: #b3e6ff;
+    background: #f7cefa;
     transition: all 0.3s ease-in-out;
 }
 .ep-5 {
-    background: #f7cefa;
+    background: #b3e6ff;
     transition: all 0.3s ease-in-out;
 }
 .ep-6 {
@@ -370,10 +370,10 @@ h3.placeholder {
     border: 0.25rem solid #e70526;
 }
 .ep-4:hover {
-    border: 0.25rem solid #1e9bff;
+    border: 0.25rem solid #e05bf9;
 }
 .ep-5:hover {
-    border: 0.25rem solid #e05bf9;
+    border: 0.25rem solid #1e9bff;
 }
 .ep-6:hover {
     border: 0.25rem solid #f72605;
@@ -471,10 +471,10 @@ h3.placeholder {
     background: #ffcbd7;
 }
 .ep4-bg {
-    background: #b3e6ff;
+    background: #f7cefa;
 }
 .ep5-bg {
-    background: #f7cefa;
+    background: #b3e6ff;
 }
 .ep6-bg {
     background: #ffd1be;
