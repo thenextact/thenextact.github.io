@@ -289,51 +289,6 @@ a.ext-link {
     margin: 0 auto;
     padding: 8.5rem 1.5rem 0 1.5rem;
 }
-.hero-container {
-    display: grid;
-    grid-auto-columns: 5fr;
-    grid-auto-rows: 1fr;
-    gap: 0;
-    grid-template-areas: 
-    "the the shape-1 shape-2 shape-3"
-    "shape-4 next next next shape-5"
-    "shape-6 shape-7 shape-8 act act"
-    "bsap bsap bsap . .";
-}
-.shape{
-    transform-origin: center;
-    animation: shaperotate 4000ms infinite;
-    animation-timing-function: cubic-bezier(0.75,0,0,1);
-}
-.s1{
-    animation-delay: 1000ms;
-}
-.s2{
-    animation-delay: 2000ms;
-}
-.s3{
-    animation-delay: 1333ms;
-}
-.s4{
-    animation-delay: 333ms;
-}
-.s5{
-    animation-delay: 1667ms;
-}
-.s6{
-    animation-delay: 667ms;
-}
-.s7{
-    animation-delay: 2333ms;
-}
-.s8{
-    animation-delay: 0;
-}
-@keyframes shaperotate {
-    0% {transform: rotate(0deg);}
-    33% {transform: rotate(360deg);}
-    100% {transform: rotate(360deg);}
-}
 
 /***** About *****/
 
@@ -828,19 +783,6 @@ button.spotify {
 @media only screen and (max-width: 600px) {
     .home-hero {
         padding: 7.5rem 1.5rem 0 1.5rem;
-    }
-    .hero-container {
-        grid-auto-columns: 3fr;
-        grid-template-areas: 
-        "the the shape-1" 
-        "shape-2 shape-3 shape-4"
-        "next next next"
-        "shape-5 shape-6 shape-7"
-        "shape-8 act act"
-        "bsap bsap bsap";
-    }
-    section.below-hero {
-        padding: 0 1.25rem;
     }
     .header-logo {
         padding: 0;
