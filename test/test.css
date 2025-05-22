@@ -73,6 +73,9 @@ h1 {
     animation: shaperotate 4000ms infinite;
     animation-timing-function: cubic-bezier(0.75,0,0,1);
 }
+.shape-container {
+    width: 100%;
+}
 .s1{
     animation-delay: 1000ms;
 }
