@@ -14,3 +14,12 @@ $(document).ready(function() {
     });
 
 });
+
+window.onscroll = function () {
+    scrollRotate();
+};
+
+function scrollRotate() {
+    let image = document.getElementById("about-shape");
+    image.style.transform = "rotate(" + window.pageYOffset/2 + "deg)";
+}

@@ -344,6 +344,18 @@ a.ext-link {
     padding: 6.75rem 0;
     border-radius: 0.75rem;
 }
+.grid-container-about {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-areas: '. . . . . . . . . . . abt abt abt abt .';
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.grid-about {
+    grid-area: abt;
+}
 
 /***** Cards *****/
 
@@ -728,6 +740,12 @@ button.spotify {
     .social {
         grid-template-areas: '. soc soc soc soc soc soc soc soc soc soc soc soc soc soc .';
     }
+    section.below-hero {
+        padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    }
+    .box {
+        padding: 4.5rem 0;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -760,9 +778,6 @@ button.spotify {
     }
     section{
         padding: 4.5rem 1.25rem 0 1.25rem;
-    }
-    section.below-hero {
-        padding: 1.25rem 1.25rem 0 1.25rem;
     }
     section.about,
     section.more-eps {
@@ -804,10 +819,6 @@ button.spotify {
     .grid-more {
         grid-template-areas: 'more more more more more more more more more . nav nav nav nav nav nav';
     }
-    .box {
-        padding: 4.5rem 1.25rem;
-        border-radius: 0.75rem;
-    }
     .grid-credits {
         display: block;
         margin-top: 1.5rem;
@@ -826,6 +837,12 @@ button.spotify {
     }
     .copyright {
         padding: 0.75rem 1.25rem 1.25rem 1.25rem;
+    }
+    .box {
+        padding: 4.5rem 1.25rem;
+    }
+    section.below-hero {
+        padding: 1.25rem;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -872,6 +889,9 @@ button.spotify {
     }
     .footer-credit {
         margin-top: 2.25rem;
+    }
+    .grid-container-about {
+        grid-template-areas: '. . . . . . . . . . abt abt abt abt abt abt';
     }
 }
 @media only screen and (max-width: 360px) {
