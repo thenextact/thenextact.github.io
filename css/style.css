@@ -279,6 +279,7 @@ a.ext-link {
     font-weight: 400;
     vertical-align: bottom;
 }
+
 /******************************
 *** HOME PAGE *****************
 ******************************/
@@ -366,7 +367,7 @@ a.ext-link {
     grid-auto-rows: 1fr;
     gap: 1rem;
     grid-template-areas: 
-    "ep-1 ep-2 ep-X ep-X";
+    "ep-1 ep-2 ep-3 ep-X";
     /*"ep-1 ep-2 ep-3 ep-4"
     "ep-5 ep-6 ep-7 ep-8";*/
 }
@@ -705,7 +706,7 @@ button.spotify {
         gap: 1rem;
         grid-template-areas: 
         "ep-1 ep-2"
-        "ep-X ep-X";
+        "ep-3 ep-X";
         /*"ep-1 ep-2"
         "ep-3 ep-4"
         "ep-5 ep-6"
@@ -874,6 +875,7 @@ button.spotify {
         grid-template-areas: 
         "ep-1"
         "ep-2"
+        "ep-3"
         "ep-X";
         /*"ep-1"
         "ep-2"
