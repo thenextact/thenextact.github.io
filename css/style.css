@@ -481,6 +481,78 @@ h3.placeholder {
     padding-top: 1.25rem;
 }
 
+/***** Event *****/
+
+.grid-event {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-areas: '. . eventcol1 eventcol1 eventcol1 eventcol1 eventcol1 eventcol1 eventcol1 eventcol1 . eventcol2 eventcol2 eventcol2 eventcol2 .';
+    margin-top: 1.5rem;
+}
+.event-col1 {
+    grid-area: eventcol1;
+}
+.event-col2 {
+    grid-area: eventcol2;
+}
+.event-box {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 2px solid #E70526;
+}
+.event-col2 p{
+    margin-left: 2rem; 
+    text-indent: -2rem;
+    padding-bottom: 1.25rem;
+}
+.event-col2 p:before{
+    content: "";
+    background-size: contain;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+.location:before {
+    background: url("../icons/location.svg");
+}
+.date:before {
+    background: url("../icons/calendar.svg");
+}
+.time:before {
+    background: url("../icons/schedule.svg");
+}
+.access:before {
+    background: url("../icons/accessibility.svg");
+}
+.price:before {
+    background: url("../icons/theaters.svg");
+}
+button.event-cta {
+    padding: 0.5rem 1rem 0.5rem 1.5rem;
+    background: #E70526;
+    border-radius: 0.75rem;
+    font-family: "Archivo", sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 65%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+}
+button.event-cta:hover {
+    background: #121212;  
+}
+button.event-cta label {
+    width: 100%;
+}
+.cta-wrapper {
+    display: block;
+    margin-top: 1.25rem;
+}
+
 /******************************
 *** EPISODE PAGES *************
 ******************************/
@@ -725,6 +797,9 @@ button.spotify {
     .line2 {
         padding-top: 1.25rem;
     }
+    .grid-event {
+        grid-template-areas: '. eventcol1 eventcol1 eventcol1 eventcol1 eventcol1 eventcol1 eventcol1 eventcol1 . eventcol2 eventcol2 eventcol2 eventcol2 eventcol2 eventcol2';
+    }
     .grid-footer {
         grid-template-areas: '. flogo flogo flogo flogo . . fcred fcred fcred fcred fcred fcred fcred fcred .';
     }
@@ -824,6 +899,16 @@ button.spotify {
     .cred-col2,
     .cred-col3 {
         padding-top: 1.25rem;
+    }
+    .grid-event {
+        display: block;
+        margin-top: 1.5rem;
+    }
+    .event-box {
+        margin-top: 1.5rem;
+    }
+    .cta-wrapper {
+        margin-top: 0;
     }
     footer {
         padding: 4.5rem 0 0 0;
