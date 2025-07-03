@@ -368,7 +368,7 @@ a.ext-link {
     gap: 1rem;
     grid-template-areas: 
     "ep-1 ep-2 ep-3 ep-4"
-    "ep-5 ep-6 ep-7 ep-X";
+    "ep-5 ep-6 ep-7 ep-8";
 }
 h3.placeholder {
     text-align: center;
@@ -779,7 +779,7 @@ button.spotify {
         "ep-1 ep-2"
         "ep-3 ep-4"
         "ep-5 ep-6"
-        "ep-7 ep-X";
+        "ep-7 ep-8";
     }
     .grid-credits {
         grid-template-areas: '. col1 col1 col1 col1 col1 col2 col2 col2 col2 col2 col3 col3 col3 col3 col3';
@@ -962,7 +962,7 @@ button.spotify {
         "ep-5"
         "ep-6"
         "ep-7"
-        "ep-X";
+        "ep-8";
     }
     .grid-footer {
         display: block;
